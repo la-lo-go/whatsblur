@@ -1,0 +1,11 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "A extension to blur chat names on WhatsApp Web",
+  "main": "scripts/blur.js",
+  "scripts": {
+    "test": "npm test scripts/blur.js"
+  },
+  "author": "la-lo-go",
+  "license": "MIT"
+}

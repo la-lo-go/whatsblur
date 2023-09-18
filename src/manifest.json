@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "WhatsBlur",
+  "version": "0.1",
+  "description": "Blur chat names on WhatsApp Web",
+  "icons": {
+    "16": "img/icon16.png",
+    "32": "img/icon32.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.whatsapp.com/*"
+      ],
+      "js": [
+        "scripts/blur.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
